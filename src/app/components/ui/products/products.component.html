@@ -1,0 +1,43 @@
+<div>
+    <section class="trending__products">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12" class="text-center">
+          <h2 class='section__title'>Trending products</h2>
+        </div>
+        <app-product-list [data]="trendingProducts"></app-product-list>
+      </div>
+    </div>
+  </section>
+  <section class='best__sales'>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12" class="text-center mb-5">
+          <h2 class='section__title'>Best Sales</h2>
+        </div>
+        <app-product-list [data]="bestSalesProducts"></app-product-list>
+      </div>
+    </div>
+  </section>
+<app-time-count></app-time-count>
+  <section class="new__arrivals">
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-12" class="text-center mb-5">
+          <h2 class='section__title'>New Arrivals</h2>
+        </div>
+        <app-product-list [data]="wirelessProducts"></app-product-list>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular__category">
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-12" class="text-center mb-5">
+          <h2 class='section__title'>popular in Category</h2>
+        </div>
+        <app-product-list [data]="popularProducts"></app-product-list>
+      </div>
+    </div>
+  </section></div>

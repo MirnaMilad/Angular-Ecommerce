@@ -1,0 +1,15 @@
+<section class="servicdes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4" *ngFor="let service of services">
+                <div class="service__item" [ngStyle] = "{'background-color': service.bg}">
+                    <span><i class={{service.icon}}></i></span>
+                    <div>
+                        <h3>{{service.title}}</h3>
+                        <p>{{service.subtitle}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
